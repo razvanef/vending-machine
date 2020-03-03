@@ -18,14 +18,14 @@ const mapStateToProps = state => ({
 	products: state.products
 });
 
-// ProductsList.propTypes = {
-//     products: PropTypes.arrayOf(PropTypes.shape({
-//       id: PropTypes.number.isRequired,
-//       title: PropTypes.string.isRequired,
-//       price: PropTypes.number.isRequired,
-//       inventory: PropTypes.number.isRequired
-//     })).isRequired,
-//   }
+ProductsList.propTypes = {
+    products: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      inventory: PropTypes.number.isRequired
+    })).isRequired,
+  }
 
 export default connect(
 	mapStateToProps,
